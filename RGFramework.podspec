@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -130,14 +130,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   s.dependency 'Masonry', '1.1.0'
-   s.dependency 'AFNetworking', '3.2.1'
-   s.dependency 'YYWebImage', '1.0.5'
-   s.dependency 'MJRefresh', '3.1.15.7'
-   s.dependency 'MyLayout', '1.6.1'
-   s.dependency 'SDCycleScrollView', '1.7.5'
-   s.dependency 'YYText', '1.0.7'
-   s.dependency 'IQKeyboardManager', '6.2.0'
    s.static_framework  =  true
 
 end

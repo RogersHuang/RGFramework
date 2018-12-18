@@ -8,6 +8,5 @@
 
 #ifndef RGFramework_h
 #define RGFramework_h
-#import <MyLayout/MyLayout.h>
 #endif /* RGFramework_h */
 
