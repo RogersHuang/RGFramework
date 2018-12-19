@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RGFramework"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "通用基础框架"
 
   # This description is used to generate tags and improve search results.
@@ -36,8 +36,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -65,7 +64,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "8.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -130,6 +129,13 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   s.static_framework  =  true
+  s.dependency "AFNetworking", '3.2.1'
+  s.dependency "FMDB", '2.7.5'
+  s.dependency "MJRefresh", '3.1.15.7'
+  s.dependency "MBProgressHUD+Add", '0.0.2'
+  s.dependency "ReactiveObjC", '3.1.0'
+  s.dependency "MyLayout", '1.6.1'
+  s.dependency "YYText", '1.0.7'
+  s.dependency "IQKeyboardManager", '6.2.0'
 
 end
